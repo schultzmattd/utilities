@@ -3,7 +3,8 @@ RUN useradd -m mschultz
 RUN  apt-get update
 RUN  apt-get install -y git \
 curl \
-zsh
+zsh \
+tmux
 RUN chsh -s $(which zsh)
 USER mschultz
 RUN cd $HOME
