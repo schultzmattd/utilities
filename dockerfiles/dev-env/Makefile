@@ -9,7 +9,7 @@ IPYTHON_NOTEBOOKS = $(HOME)/ipython_notebooks/
 all: build
 
 build:
-	docker build -f $(BASENAME).dockerfile -t $(BASENAME):$(TAG) ./
+	docker build -f Dockerfile -t $(BASENAME):$(TAG) ./
 #run:
 #	docker run -v $(HOME)/.aws:$(HOME)/.aws -v $(HOME):$(HOME) --rm -it $(BASENAME):$(TAG)
 shell:
